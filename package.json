@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-github-personal-website",
+  "name": "virajrane.com",
   "private": false,
-  "description": "Repo for github portfolio using gatsby",
+  "description": "Repo for portfolio and blogs using gatsby",
   "homepage": "https://github.com/thakkaryash94/gatsby-github-personal-website",
   "version": "1.1.0",
-  "author": "Yash Thakkar <thakkaryash94@gmail.com>",
+  "author": "Viraj Rane <rane.viraj.14ee7003@gmail.com>",
   "dependencies": {
     "@primer/components": "^19.0.0",
     "@primer/octicons-react": "^9.6.0",

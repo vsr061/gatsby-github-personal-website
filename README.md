@@ -1,3 +1,5 @@
+Template credit: [Yash Thakkar](https://github.com/thakkaryash94)
+
 # Get started building your personal website using GatsbyJS
 
 ### Showcase your software development skills
@@ -43,7 +45,9 @@ npm install
 ```
 3. Build the site and make it available on a local server
 ```
-GITHUB_TOKEN=YOUR_GITHUB_TOKEN npm run develop
+Set Environment variable: GITHUB_TOKEN=YOUR_GITHUB_TOKEN
+and then run
+npm run develop
 ```
 6. Now browse to [http://localhost:8000](http://localhost:8000)
 
