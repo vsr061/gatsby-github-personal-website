@@ -22,6 +22,10 @@ function Projects() {
                   totalCount
                 }
                 forkCount
+                primaryLanguage {
+                  color
+                  name
+                }
               }
             }
           }
