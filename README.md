@@ -129,7 +129,7 @@ To give you a sound foundation to start your personal website, your repository i
 
 There are the usual suspects, like `layout.js` and `seo.js`. But there are few more worth pointing out:
 
-- `interests.js`: A heading and dynamic list of "My Interests," which is populated with the [topics](#topics) you list in your `/data/topcis.yaml`.
+- `technicalSkills.js`: A heading and dynamic list of "My Interests," which is populated with the [topics](#topics) you list in your `/data/topcis.yaml`.
 - `masthead.js`: A collection of your avatar, name, bio, and other metadata that's displayed prominently on all your webpages to help identify what the website is about.
 - `postCard.js`: A compact, summarized presentation of a blog post, re-used to display a listing of your latest blog posts.
 - `projects.js`: A heading and dynamic list of "My Projects," which is populated with a listing of your newest GitHub repositories.

@@ -1,0 +1,5 @@
+organizations:
+  - name: Goldman Sachs
+    web_url: https://www.goldmansachs.com/index.html
+    image_url: /goldman-sachs.svg
+    designation: Analyst - Software Development

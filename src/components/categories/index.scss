@@ -1,0 +1,49 @@
+.category-container {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  line-height: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none; // IE 10+
+  overflow: -moz-scrollbars-none; // Firefox
+  z-index: 1;
+  padding: 6px 20px;
+  border-color: #a3a3a3;
+  border-style: solid;
+  border-width: 1px 6px;
+  background-color: #f4f7f8;
+
+  .item {
+    display: inline-block;
+    margin: 0.25rem 6px 0.25rem 0;
+    border-radius: 15px;
+    white-space: normal;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    button {
+      font-weight: normal;
+
+      &:not(:hover) {
+        color: black;
+      }
+
+      &.item-selected {
+        color: #fff;
+        background-color: #0366d6;
+        border-color: rgba(27, 31, 35, 0.15);
+        box-shadow: 0px 1px 0px rgba(27, 31, 35, 0.1),
+          inset 0px 2px 0px rgba(255, 255, 255, 0.03);
+      }
+    }
+  }
+
+  .item:last-child {
+    margin-right: 0;
+  }
+}
+
+.category-container::-webkit-scrollbar {
+  display: none; // Safari and Chrome
+}

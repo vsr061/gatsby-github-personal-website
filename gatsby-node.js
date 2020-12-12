@@ -5,7 +5,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `posts` })
-    const [postYear, postMonth, postDay, ...fileNames] = (slug.replace('/', '')).split('-')
+    const [postYear, postMonth, postDay, ...fileNames] = slug
+      .replace('/', '')
+      .split('-')
     const fileName = fileNames.join('-')
     createNodeField({
       node,
@@ -34,8 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `
-  ).then(result => {
+  `).then(result => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,

@@ -1,6 +1,8 @@
 ---
 title: "Welcome to Jekyll!"
-published: false
+type: "blog"
+category: "LeetCode"
+published: true
 ---
 
 **Hello world**, this is my first Jekyll blog post.

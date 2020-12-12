@@ -5,8 +5,8 @@ module.exports = {
     social: {
       medium: `https://medium.com/@vsr061`,
       twitter: `https://twitter.com/virajrane_com`,
-      linkedIn: `https://www.linkedin.com/in/viraj-rane`
-    }
+      linkedIn: `https://www.linkedin.com/in/viraj-rane`,
+    },
   },
   pathPrefix: process.env.PATH_PREFIX || '/',
   plugins: [
@@ -23,14 +23,35 @@ module.exports = {
       options: { name: `markdown-pages`, path: `${__dirname}/src/data/posts` },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `aboutMe`, path: `${__dirname}/src/data/aboutMe` },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
-              lineNumbers: true
-            }
+              lineNumbers: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1500,
+              withWebp: true,
+              showCaptions: true,
+              quality: 100,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {
+              margin: 36,
+              scrollOffset: 0,
+            },
           },
         ],
       },
@@ -43,8 +64,12 @@ module.exports = {
         url: 'https://api.github.com/graphql',
         headers: {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
-        }
+        },
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }

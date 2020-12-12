@@ -1,0 +1,30 @@
+technical_skills:
+  - name: Java EE
+    web_url: https://www.java.com/
+    image_url_black: /java_black.svg
+    image_url_white: /java_white.svg
+
+  - name: Adobe</br>Experince</br>Manager
+    web_url: https://www.adobe.com/in/marketing/experience-manager.html
+    image_url_black: /aem_black.svg
+    image_url_white: /aem_white.svg
+
+  - name: Spring
+    web_url: https://spring.io/
+    image_url_black: /spring_black.svg
+    image_url_white: /spring_white.svg
+
+  - name: React JS
+    web_url: https://reactjs.org/
+    image_url_black: /react_black.svg
+    image_url_white: /react_white.svg
+
+  - name: HTML
+    web_url: https://www.w3.org/MarkUp/
+    image_url_black: /html_black.svg
+    image_url_white: /html_white.svg
+
+  - name: CSS
+    web_url: https://www.w3.org/Style/CSS/Overview.en.html
+    image_url_black: /css_black.svg
+    image_url_white: /css_white.svg
