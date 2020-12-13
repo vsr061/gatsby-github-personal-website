@@ -19,6 +19,18 @@ body {
   border-radius: 50%;
 }
 
+.gatsby-resp-image-figure {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.gatsby-resp-image-figcaption {
+  text-align: center;
+  font-size: 14px;
+  word-wrap: break-word;
+  color: #6a737d;
+}
+
 :root {
   --deckgo-highlight-code-scroll: auto;
 }

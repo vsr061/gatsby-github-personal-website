@@ -12,7 +12,10 @@ function Thoughts() {
       query {
         allMarkdownRemark(
           limit: 6
-          filter: { frontmatter: { published: { eq: true } } }
+          filter: {
+            frontmatter: { type: { eq: "blog" }, published: { eq: true } }
+          }
+          sort: { order: DESC, fields: fields___postDate }
         ) {
           edges {
             node {

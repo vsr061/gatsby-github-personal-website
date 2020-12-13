@@ -33,7 +33,11 @@ export const AboutMe = () => {
           key={edge.node.id}
           style={{ color: style === 'dark' ? 'white' : 'black' }}
           dangerouslySetInnerHTML={{
-            __html: sanitizeHtml(edge.node.html),
+            __html: sanitizeHtml(edge.node.html, {
+              allowedAttributes: {
+                h1: ['class'],
+              },
+            }),
           }}
           className="markdown-body entry-content container-lg"
         />
