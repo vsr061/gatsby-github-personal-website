@@ -17,7 +17,9 @@ export const ThumbnailItem = ({ node }) => {
       <div className="d-flex flex-justify-between flex-items-start mb-1">
         <div className="f4 lh-condensed mb-1">
           <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title || node.fields.slug}</h3>
+            <h3 className={'mb-4'}>
+              {node.frontmatter.title || node.fields.slug}
+            </h3>
           </Link>
           <p
             dangerouslySetInnerHTML={{
