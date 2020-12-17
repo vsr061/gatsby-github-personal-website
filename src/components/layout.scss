@@ -17,8 +17,14 @@
   }
 }
 
-.text-white blockquote {
-  box-shadow: inset 3px 0 0 0 #ffffff;
+.text-white {
+  blockquote {
+    box-shadow: inset 3px 0 0 0 #ffffff;
+  }
+
+  .gatsby-resp-image-figcaption {
+    color: #b9b9b9;
+  }
 }
 
 .repo-language-color {

@@ -262,20 +262,20 @@ function MastHead() {
       <StyledHr color={style} />
       <Box mb={6} fontSize={4}>
         {Organizations.organizations.map((organization, i) => (
-          <MetaComponent className="hover-grow" key={i} color={theme.iconColor}>
-            <a
-              className="d-inline-flex"
-              rel="noreferrer"
-              target="_blank"
-              href={organization.web_url}
-            >
-              <img
-                height="60"
-                width="60"
-                src={organization.image_url}
-                alt={organization.image_url}
-              />
-            </a>
+          <PrimerLink
+            href={organization.web_url}
+            rel="noreferrer"
+            target="_blank"
+            color={theme.iconColor}
+            className="hover-grow d-inline-flex mb-3 text-black"
+            key={i}
+          >
+            <img
+              height="60"
+              width="60"
+              src={organization.image_url}
+              alt={organization.image_url}
+            />
             <span style={{ marginLeft: '8px' }}>
               {organization.designation}
               <br />
@@ -283,7 +283,7 @@ function MastHead() {
               <br />
               {organization.name}
             </span>
-          </MetaComponent>
+          </PrimerLink>
         ))}
         {location && (
           <MetaComponent color={theme.iconColor}>
@@ -332,28 +332,6 @@ function MastHead() {
               {websiteUrl}
             </PrimerLink>
           </MetaComponent>
-        )}
-        {isHireable && (
-          <BorderBox
-            display={'inline-block'}
-            fontSize={5}
-            borderRadius={2}
-            bg={'green.5'}
-            py={1}
-            px={2}
-            title="Hire me"
-            border={0}
-          >
-            {social.linkedIn && (
-              <PrimerLink
-                href={social.linkedIn}
-                color={theme.iconColor}
-                target="_blank"
-              >
-                Available for hire
-              </PrimerLink>
-            )}
-          </BorderBox>
         )}
         <StyledHr color={style} />
         <Box mb={1}>
