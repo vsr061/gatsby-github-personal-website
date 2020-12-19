@@ -47,9 +47,9 @@ The [Sling Resource Merger](https://helpx.adobe.com/in/experience-manager/6-4/si
 
 > **The goal for using the Sling Resource Merger in AEM is to:**
 >
->ensure that customization changes are not made in **/libs**.
+> ensure that customization changes are not made in **/libs**.
 >
->This is because the content of **/libs** is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+> This is because the content of **/libs** is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
 
 &nbsp;
 

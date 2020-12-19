@@ -1,6 +1,6 @@
 ---
-title: "About Me"
-type: "about me"
+title: 'About Me'
+type: 'about me'
 ---
 
 <h1 class="text-center">Hello Folks 👋</h1>

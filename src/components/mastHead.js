@@ -1,6 +1,5 @@
 import {
   Avatar,
-  BorderBox,
   Box,
   Heading,
   Link as PrimerLink,
@@ -55,7 +54,6 @@ function MastHead() {
             login
             url
             avatarUrl
-            isHireable
             location
             company
             followers {
@@ -79,15 +77,7 @@ function MastHead() {
 
   const MetaComponent = layout === 'stacked' ? StackedMeta : SideMeta
 
-  const {
-    websiteUrl,
-    login,
-    email,
-    avatarUrl,
-    isHireable,
-    name,
-    location,
-  } = user
+  const { websiteUrl, login, email, avatarUrl, name, location } = user
 
   return (
     <>

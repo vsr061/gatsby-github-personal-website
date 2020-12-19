@@ -11,17 +11,17 @@ published: true
 
 &nbsp;
 
->**You can find Coral UI cilentlibs under:**
+> **You can find Coral UI cilentlibs under:**
 >
->**_Coral UI2:_** /libs/clientlibs/granite/coralui2
+> **_Coral UI2:_** /libs/clientlibs/granite/coralui2
 >
->**_Coral UI3_**: /libs/clientlibs/granite/coralui3
+> **_Coral UI3_**: /libs/clientlibs/granite/coralui3
 >
->**_Also, here are the clientlibs categories for Coral UI:_**
+> **_Also, here are the clientlibs categories for Coral UI:_**
 >
->**_Coral UI2:_** granite.ui.foundation, granite.ui.foundation.admin, coralui2
+> **_Coral UI2:_** granite.ui.foundation, granite.ui.foundation.admin, coralui2
 >
->**_Coral UI3:_** granite.ui.coral.foundation, coralui3
+> **_Coral UI3:_** granite.ui.coral.foundation, coralui3
 
 &nbsp;
 
@@ -54,14 +54,15 @@ In this tutorial, we will add two buttons in the AEM Inbox action bar.
 - **Step 1:** Get the clientlibs category of the target page. We need to create a
   clientlibs folder in our project with this category. So, it will get loaded after the targeted page’s clientlibs.
 
-![&nbsp;](../media/2020-04-15-Develop-Front-End-Components-with-AEM-Coral-UI/p2.png)
+![ ](../media/2020-04-15-Develop-Front-End-Components-with-AEM-Coral-UI/p2.png)
 
 - **Step 2:** Create a clientlibs folder with the category received from **Step 1**
 
 ![Here, I have created the folder with categories(String[]) = cq.inbox.gui, which is same as the category we received in Step 1](../media/2020-04-15-Develop-Front-End-Components-with-AEM-Coral-UI/p3.png)
 
 - **Step 3: _Start Coding with the Coral UI library!_** So, before starting with actual code we will understand the folder structure and what each file is for. Check the following image of the folder structure:
-![Project file structure](../media/2020-04-15-Develop-Front-End-Components-with-AEM-Coral-UI/p4.png)
+  ![Project file structure](../media/2020-04-15-Develop-Front-End-Components-with-AEM-Coral-UI/p4.png)
+
   1.  **actions:** This folder has JS code to handle button click events. This is based on [Granite UI client-side JS components](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/index.html) called [foundation-collection-action](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/collection/action/index.html).
 
   2.  **buttons:** It contains the [Coral UI library](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Button.html) code to initialize button components.
@@ -160,6 +161,7 @@ let downloadAsset = () => {
   return button
 }
 ```
+
 &nbsp;
 
 Coral UI has many components and all can be instantiated easily with JS, without adding a hardcoded string of HTML. Learn more about the Coral Button component [here](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Button.html).
@@ -182,6 +184,7 @@ $(document).ready(function() {
   })
 })
 ```
+
 &nbsp;
 
 To add these buttons in the Inbox action bar we can use the existing `appendChild()` method and pass the respective buttons. `leftItems` are the buttons which we see on the left side of the action bar like complete, step back, etc. Here, [Coral.commons.ready()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.commons.html#Coral.commons:.ready) checks whether Coral components and all nested components are ready, which assures their `_initialize` and `_render` methods have been called. If so, the provided callback function is executed.
@@ -205,6 +208,7 @@ $(document).on('click', '.foundation-collection-item', function(item) {
   }
 })
 ```
+
 &nbsp;
 
 This is a simple _“click”_ event handler which gets triggered when we click on the item’s checkbox. As these buttons are specifically for assets, if the selected item payload is not under `/content/dam` then, these buttons should not be visible.

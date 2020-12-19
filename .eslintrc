@@ -32,8 +32,14 @@
     ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "no-console": "off",
     "react/prop-types": 0,
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "prefer-const": "warn",
+    "no-console": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

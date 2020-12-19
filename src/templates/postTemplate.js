@@ -68,7 +68,10 @@ const PostTemplate = ({ data }) => {
                 >
                   Published {formatPostDate(`${post.fields.postDate}`)}
                 </p>
-                <div className={'blog-markdown__body'} dangerouslySetInnerHTML={{ __html: post.html }} />
+                <div
+                  className={'blog-markdown__body'}
+                  dangerouslySetInnerHTML={{ __html: post.html }}
+                />
               </div>
             </div>
           </div>
