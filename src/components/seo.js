@@ -35,7 +35,7 @@ function SEO() {
     >
       <meta
         name="description"
-        content="Viraj Rane: Analyst - Software Development at GoldmanSachs"
+        content="Viraj Rane: Analyst - Software Development at Goldman Sachs"
       />
       <meta
         name="keywords"
@@ -48,7 +48,7 @@ function SEO() {
       <meta property="og:url" content="https://virajrane.com/" />
       <meta
         property="og:description"
-        content="Viraj Rane: Analyst - Software Development at GoldmanSachs"
+        content="Viraj Rane: Analyst - Software Development at Goldman Sachs"
       />
       <meta
         name="twitter:image:src"
@@ -59,7 +59,7 @@ function SEO() {
       <meta name="twitter:title" content="Viraj Rane: Portfolio & Blogs" />
       <meta
         name="twitter:description"
-        content="Viraj Rane: Analyst - Software Development at GoldmanSachs"
+        content="Viraj Rane: Analyst - Software Development at Goldman Sachs"
       />
       <meta name="theme-color" content="#000000" />
       <link
