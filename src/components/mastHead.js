@@ -53,7 +53,6 @@ function MastHead() {
             bio
             login
             url
-            avatarUrl
             location
             company
             followers {
@@ -77,13 +76,13 @@ function MastHead() {
 
   const MetaComponent = layout === 'stacked' ? StackedMeta : SideMeta
 
-  const { websiteUrl, login, email, avatarUrl, name, location } = user
+  const { websiteUrl, login, email, name, location } = user
 
   return (
     <>
       <GatsbyLink to={'/'}>
         <Avatar
-          src={avatarUrl}
+          src="/avatar.jfif"
           alt="user-avatar"
           className="circle"
           mb={3}
@@ -197,6 +196,7 @@ function MastHead() {
             />
             <PrimerLink
               href={`https://github.com/${login}`}
+              rel="noreferrer"
               target="_blank"
               color={theme.iconColor}
             >
